@@ -1,76 +1,144 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
+<head>
+    <title>Ryan Mears</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="lib/css/main.css" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- JQuery library -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/22.2.6/css/dx.material.blue.light.css">
+    <!-- DevExtreme library -->
+    <script src="lib/js/dx.all.js" asp-append-version="true"></script>
+    <script src="lib/js/dx.aspnet.data.js" asp-append-version="true"></script>
+
+    <!-- Bootstrap library -->
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/js/dx-quill.min.js" asp-append-version="true"></script>
+    <script src="lib/js/site.js" asp-append-version="true"></script>
+
+    <!-- Scripts -->
+    <!--<script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/jquery.poptrox.min.js"></script>
+    <script src="lib/js/browser.min.js"></script>
+    <script src="lib/js/breakpoints.min.js"></script>
+    <script src="lib/js/util.js"></script>
+    <script src="lib/js/main.js"></script>-->
+
+</head>
+<body >
+	<!-- Banner -->
+	<div id="canvas" class="container-fluid bg-dark vh-100 d-flex flex-column justify-content-center text-center text-white">
+		<a href="" class="image avatar "><img src="/images/self.jpg" alt="" /></a>
+		<h1><strong>Ryan Mears</strong></h1>
 		
-		<title>Ryan Mears</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" /> 
+		<div id="viewWorkBtn" class="col-2 mx-auto auto"></div>
+	</div>
+	<!-- Navigation -->
+	<div id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ms-2">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#section_about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#section_projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#section_contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 
-	</head>
-	<body class="is-preload">
+	<!-- Main -->
+	<div id="main" class="col-10 mx-auto d-flex flex-column">
+		<!-- Sections -->
+		<div id="section_about" class="container-fluid pt-5 vh-100">
+			<h1 class="text-center mb-5"><u>ABOUT</u></h1>
+			<div class="row h-75">
+				<div class="col-4 fs-5 align-content-center mx-auto">
+					<p>
+						Hello there! 
+                        I'm Ryan. 
+                        I've always been fascinated by technology and its potential to transform the world around us. 
+                        My journey in software development has been an exciting one, filled with opportunities to learn, grow, and innovate.
+						Throughout my career, I've had the privilege of working on a variety of projects, each presenting its own set of challenges and opportunities for creativity. 
+                        From developing robust web applications to crafting elegant mobile solutions, I thrive on turning ideas into reality through code.												
+					</p>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="" class="image avatar"><img src="/images/self.jpg" alt="" /></a>
-					<h1><strong>My name is Ryan Mears</strong> <br />.<br /></h1>
+					<p>
+						What drives me is not just writing lines of code, but solving real-world problems and making a positive impact. 
+                        I believe in the power of collaboration and continuous learning, constantly seeking out new technologies and best practices to improve my skills and deliver top-notch solutions.												
+					</p>
+
+					<p>
+						Outside of coding, you can find me indulging in a good book or spending quality time with friends and family. 
+                        I'm always up for a new adventure, both in the digital realm and the world beyond.
+						I'm excited about the future of software development and the endless possibilities it holds. 
+                        If you're looking for a dedicated developer who's passionate about creating exceptional experiences, I'd love to connect and see how we can work together to bring your vision to life.
+					</p>
+
+					<div id="letsBuildBtn"></div>
 				</div>
-			</header>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>My Portfolio</h2>
-						</header>
-						<p>A showcase of my projects and abilities.</p>
-					</section>
-
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-						
-						</div>
-					</section>
-
-				<!-- Three -->
-					<section id="three">
-						<h2>Contact</h2>
-						<div class="row">
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="mailto:ryan.w.mears8@gmail.com">ryan.w.mears8@gmail.com</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
+				<div class="col-6 mx-auto border">
+					Image goes here.
+					<img />
+				</div>
 			</div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://github.com/ryan-mears" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:ryan.w.mears8@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-			</footer>
+		</div>
+		<div id="section_projects" class="container-fluid vh-100 pt-5">
+			<h1 class="text-center"><u>PROJECTS</u></h1>
+			<p>This is the projects section.</p>
+		</div>
+		<div id="section_contact" class="container-fluid vh-100 pt-5">
+			<h1 class="text-center"><u>CONTACT</u></h1>
+			<p>This is the contact section.</p>
+		</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+	<!-- Footer -->
+	<footer id="footer">
+	</footer>
+</body>
 </html>
+<script>
+    function smoothScroll(elementId) {
+        var element = document.getElementById(elementId);
+        element.scrollIntoView({ behavior: 'smooth' });
+	}
+	$('#viewWorkBtn').dxButton({
+        icon: 'arrowdown',
+        stylingMode: 'outlined',
+        text: 'View my work',
+        type: 'success',
+		onClick() {
+			smoothScroll("section_about");
+            
+            //$('#section_about').scrollIntoView({ behavior: 'smooth' });
+        },
+	});
+
+    $('#letsBuildBtn').dxButton({
+        stylingMode: 'text',
+        text: "Let's build something amazing together!",
+        type: 'default',
+        onClick() {
+            smoothScroll("section_contact");
+        },
+    });
+
+</script>

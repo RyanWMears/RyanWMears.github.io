@@ -2,7 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\lib"
+    "\\lib",
+    "\\lib\\css",
+    "\\lib\\webfonts\\svgs",
+    "\\lib\\webfonts\\svgs\\solid"
   ],
+  "SelectedNode": "\\lib\\css\\site.css",
   "PreviewInSolutionExplorer": false
 }

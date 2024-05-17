@@ -20,3 +20,27 @@ body {
 .pageContainer {
     min-height: 85vh !important;
 }
+
+
+.header {
+    color: #3d3f41;
+    font-family: "raleway-bold";
+    margin: 15px 0px 0px 0px;
+}
+
+.header-underline {
+    background: #3d3f41;
+    height: 5px;
+    width: 100px;
+}
+
+footer {
+    background: #1E2B39;
+    padding: 60px 0 40px 0;
+    position: relative;
+}
+
+#section_contact
+{
+    height: 85vh;
+}

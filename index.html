@@ -23,10 +23,22 @@
 	<script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="lib/js/dx-quill.min.js" asp-append-version="true"></script>
 	<script src="lib/js/site.js" asp-append-version="true"></script>
+	<script src="lib/js/turn/turn.js" asp-append-version="true"></script>
+
 	<!-- Scripts -->
 
 </head>
 <body>
+	<div id="flipbook" class="sample-flipbook">
+		<div class="hard">Turn.js </div>
+		<div class="hard"></div>
+		<div> Page 1 </div>
+		<div> Page 2 </div>
+		<div> Page 3 </div>
+		<div> Page 4 </div>
+		<div class="hard"></div>
+		<div class="hard"></div>
+	</div>
 	<!-- Banner -->
 	<div id="canvas" class="vh-100 d-flex bg-theme-color flex-column align-items-center text-center mx-auto">
 		<a href="" class="image avatar "><img src="/images/self.jpg" alt="" /></a>
@@ -141,6 +153,11 @@
 </body>
 </html>
 <script>
+    $("#flipbook").turn({
+        width: 400,
+        height: 300,
+        autoCenter: true
+    });
     function smoothScroll(elementId) {
         var element = document.getElementById(elementId);
         element.scrollIntoView({ behavior: 'smooth' });

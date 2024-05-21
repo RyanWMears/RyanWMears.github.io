@@ -1,26 +1,25 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .pageContainer {
     min-height: 85vh !important;
 }
-
 
 .header {
     color: #3d3f41;
@@ -40,7 +39,47 @@ footer {
     position: relative;
 }
 
-#section_contact
-{
+#section_contact {
     height: 85vh;
+}
+
+.bg-theme-color {
+    background-color: #d50310;
+}
+
+.theme-text-color {
+    color: #040404;
+}
+
+@font-face {
+    font-family: 'Masquerade';
+    src: url('Masquerade.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuentinCaps';
+    src: url('QuentinCaps.ttf.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title-font {
+    font-family: 'QuentinCaps';
+    color: #fdfffd;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.title-borderline-thick {
+    background: #fdfffd;
+    height: 10px;
+    width: 80vw;
+}
+
+.title-borderline {
+    background: #fdfffd;
+    height: 5px;
+    width: 80vw;
 }

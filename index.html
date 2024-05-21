@@ -29,14 +29,26 @@
 </head>
 <body>
 	<!-- Banner -->
-	<div id="canvas" class="container-fluid bg-dark vh-100 d-flex flex-column justify-content-center text-center text-white">
+	<div id="canvas" class="vh-100 d-flex bg-theme-color flex-column align-items-center text-center mx-auto">
 		<a href="" class="image avatar "><img src="/images/self.jpg" alt="" /></a>
-		<h1><strong>Ryan Mears</strong></h1>
-		
-		<div id="viewWorkBtn" class="col-2 mx-auto auto"></div>
+		<h4 class="" style="color: #e0d566;">READ THIS BOOK FIRST!</h4>
+		<div class="title-borderline mt-2 mb-5"></div>
+		<div class="title-font">RYAN MEARS</div>
+		<div class="title-font"> FULL STACK DEVELOPER</div>
+		<div class="title-borderline-thick mt-5 mb-3"></div>
+		<h4 class="text-white">PLAYERS MANUAL</h4>
+		<div class="title-borderline mt-2 mb-4"></div>
+		<img class=" col-3 border border-5 border-dark " style="height: 45vh" />
+
+		<div class="title-borderline mt-4 mb-2"></div>
+		<d5 class="text-white">FANTASY ROLE PLAYING GAME</d5>
+		<div class="title-borderline mt-2 mb-2"></div>
+		<d5 class="text-white">The ultimate game of your imagination,<br />complete with monsters, magic, and treasure.<br />For 1 or more beginning to intermediate players.</d5>
+
+		<!--<div id="viewWorkBtn" class="col-2 mx-auto auto"></div>-->
 	</div>
 	<!-- Navigation -->
-	<div id="navbar" class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+	<div id="navbar" class="navbar navbar-expand-lg navbar-light bg-theme-color sticky-top">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -57,7 +69,6 @@
 			</ul>
 		</div>
 	</div>
-
 	<!-- Main -->
 	<div id="main" class="d-flex flex-column">
 		<!-- Sections -->
@@ -94,7 +105,7 @@
 				<div class="col-6 mx-auto border">
 					Image goes here.
 					<img />
-				</div>		
+				</div>
 			</div>
 		</div>
 		<!-- Projects Section -->
@@ -131,36 +142,36 @@
 </body>
 </html>
 <script>
-    function smoothScroll(elementId) {
-        var element = document.getElementById(elementId);
-        element.scrollIntoView({ behavior: 'smooth' });
+	function smoothScroll(elementId) {
+		var element = document.getElementById(elementId);
+		element.scrollIntoView({ behavior: 'smooth' });
 	}
 	$('#viewWorkBtn').dxButton({
-        icon: 'arrowdown',
-        stylingMode: 'outlined',
-        text: 'View my work',
-        type: 'success',
+		icon: 'arrowdown',
+		stylingMode: 'outlined',
+		text: 'View my work',
+		type: 'success',
 		onClick() {
-			smoothScroll("section_about");            
-        },
+			smoothScroll("section_about");
+		},
 	});
 
-    $('#letsBuildBtn').dxButton({
-        stylingMode: 'text',
-        text: "Let's build something amazing together!",
-        type: 'default',
-        onClick() {
-            smoothScroll("section_contact");
-        },
+	$('#letsBuildBtn').dxButton({
+		stylingMode: 'text',
+		text: "Let's build something amazing together!",
+		type: 'default',
+		onClick() {
+			smoothScroll("section_contact");
+		},
 	});
 
-    $('#contactSubmitBtn').dxButton({
-        stylingMode: 'contained',
-        text: "Submit",
-        type: 'default',
-        onClick() {
+	$('#contactSubmitBtn').dxButton({
+		stylingMode: 'contained',
+		text: "Submit",
+		type: 'default',
+		onClick() {
 			$('#contactForm').submit();
-        },
-    });
+		},
+	});
 
 </script>

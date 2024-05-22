@@ -25,63 +25,40 @@
 	<script src="lib/js/site.js" asp-append-version="true"></script>
 
 	<!-- Scripts -->
+	<script src="lib/js/turn/turn.js" asp-append-version="true"></script>
 
 </head>
-<body>
-	<!-- Banner -->
-	<div id="canvas" class="vh-100 d-flex bg-theme-color flex-column align-items-center text-center mx-auto">
-		<a href="" class="image avatar "><img src="/images/self.jpg" alt="" /></a>
-		<h4 class="" style="color: #e0d566;">READ THIS BOOK FIRST!</h4>
-		<div class="title-borderline mt-2 mb-5"></div>
-		<div class="title-font">RYAN MEARS</div>
-		<div class="title-font"> FULL STACK DEVELOPER</div>
-		<div class="title-borderline-thick mt-5 mb-3"></div>
-		<h4 class="text-white">PLAYERS MANUAL</h4>
-		<div class="title-borderline mt-2 mb-4"></div>
-		<img class=" col-3 border border-5 border-dark " style="height: 45vh" />
+<body class="bg-dark">
+	<div id="flipbook" class="sample-flipbook">
+		<!-- Cover -->
+		<div id="cover" class="d-flex bg-theme-color flex-column align-items-center text-center">
+			<a href="" class="image avatar "><img src="/images/self.jpg" alt="" /></a>
+			<h4 class="" style="color: #e0d566;">READ THIS BOOK FIRST!</h4>
+			<div class="title-borderline mt-2 mb-5"></div>
+			<div class="title-font">RYAN MEARS</div>
+			<div class="title-font"> FULL STACK DEVELOPER</div>
+			<div class="title-borderline-thick mt-5 mb-3"></div>
+			<h4 class="text-white">PLAYERS MANUAL</h4>
+			<div class="title-borderline mt-2 mb-4"></div>
+			<img class=" col-6 border border-5 border-dark " style="height: 45vh" />
 
-		<div class="title-borderline mt-4 mb-2"></div>
-		<d5 class="text-white">FANTASY ROLE PLAYING GAME</d5>
-		<div class="title-borderline mt-2 mb-2"></div>
-		<d5 class="text-white">The ultimate game of your imagination,<br />complete with monsters, magic, and treasure.<br />For 1 or more beginning to intermediate players.</d5>
+			<div class="title-borderline mt-4 mb-2"></div>
+			<d5 class="text-white">FANTASY ROLE PLAYING GAME</d5>
+			<div class="title-borderline mt-2 mb-2"></div>
+			<d5 class="text-white">The ultimate game of your imagination,<br />complete with monsters, magic, and treasure.<br />For 1 or more beginning to intermediate players.</d5>
 
-		<!--<div id="viewWorkBtn" class="col-2 mx-auto auto"></div>-->
-	</div>
-	<!-- Navigation -->
-	<div id="navbar" class="navbar navbar-expand-lg navbar-light bg-theme-color sticky-top">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ms-5">
-				<li class="nav-item ms-2">
-					<a class="nav-link text-white" href="#">Home</a>
-				</li>
-				<li class="nav-item ms-2">
-					<a class="nav-link text-white" href="#section_about">About</a>
-				</li>
-				<li class="nav-item ms-2">
-					<a class="nav-link text-white" href="#section_projects">Projects</a>
-				</li>
-				<li class="nav-item ms-2">
-					<a class="nav-link text-white" href="#section_contact">Contact</a>
-				</li>
-			</ul>
+			<!--<div id="viewWorkBtn" class="col-2 mx-auto auto"></div>-->
 		</div>
-	</div>
-	<!-- Main -->
-	<div id="main" class="d-flex flex-column">
-		<!-- Sections -->
 		<!-- About Section -->
-		<div id="section_about" class="container-fluid pt-5 vh-100 d-flex flex-column align-items-center">
+		<div id="section_about" class="d-flex flex-column align-items-center bg-light">
 			<h1 class="header text-center">ABOUT</h1>
-			<div class="header-underline mt-2 mb-5"></div>
+			<div class="header-underline mt-2"></div>
 
-			<div class=" col-10 h-75 overflow-auto d-flex flex-inline">
-				<div class="col-4 fs-5 align-content-center mx-auto">
+			<div class="overflow-auto d-flex flex-inline mt-5 ">
+				<div class="col-4 fs-6 align-content-center mx-auto">
 					<p>
-						Hello there!
-						I'm Ryan.
+						Hello there!<br/>
+						I'm Ryan.<br/><br/>
 						I've always been fascinated by technology and its potential to transform the world around us.
 						My journey in software development has been an exciting one, filled with opportunities to learn, grow, and innovate.
 						Throughout my career, I've had the privilege of working on a variety of projects, each presenting its own set of challenges and opportunities for creativity.
@@ -109,14 +86,14 @@
 			</div>
 		</div>
 		<!-- Projects Section -->
-		<div id="section_projects" class="vh-100 pt-5 d-flex flex-column align-items-center bg-light">
+		<div id="section_projects" class="d-flex flex-column align-items-center bg-light">
 			<h1 class="header">PROJECTS</h1>
 			<div class="header-underline mt-2 mb-5"></div>
 
 			<p>This is the projects section.</p>
 		</div>
 		<!-- Contact Section -->
-		<div id="section_contact" class="container-fluid pt-5 d-flex flex-column justify-content-center align-items-center">
+		<div id="section_contact" class="container-fluid d-flex flex-column justify-content-center align-items-center bg-light">
 			<h1 class="header">CONTACT</h1>
 			<div class="header-underline mt-2 mb-5"></div>
 
@@ -131,17 +108,54 @@
 			</div>
 		</div>
 	</div>
+	<!-- Banner -->
+	<!-- Navigation -->
+	<!--<div id="navbar" class="navbar navbar-expand-lg navbar-light bg-theme-color sticky-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ms-5">
+				<li class="nav-item ms-2">
+					<a class="nav-link text-white" href="#">Home</a>
+				</li>
+				<li class="nav-item ms-2">
+					<a class="nav-link text-white" href="#section_about">About</a>
+				</li>
+				<li class="nav-item ms-2">
+					<a class="nav-link text-white" href="#section_projects">Projects</a>
+				</li>
+				<li class="nav-item ms-2">
+					<a class="nav-link text-white" href="#section_contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>-->
+	<!-- Main -->
+	<!--<div id="main" class="d-flex flex-column">-->
+		<!-- Sections -->
+
+
+
+	<!--</div>-->
 	<!-- Footer -->
-	<footer id="footer" class="">
+	<!--<footer id="footer" class="">
 		<div class="d-flex flex-inline justify-content-center" style="font-size:2em;">
 			<a href="https://www.linkedin.com/in/ryan-mears-599b30192/" class="bi bi-linkedin mx-3"><span class="label"></span></a>
 			<a href="https://github.com/RyanWMears" class="bi bi-github mx-3"><span class="label"></span></a>
 			<a href="mailto:ryan.w.mears8@gmail.com" class="bi bi-envelope mx-3"><span class="label"></span></a>
 		</div>
-	</footer>
+	</footer>-->
 </body>
 </html>
 <script>
+	$("#flipbook").turn({
+		width: "80vw",
+		height: "100vh",
+		autoCenter: true,
+		pages: 4,
+		duration: 1000,
+	});
 	function smoothScroll(elementId) {
 		var element = document.getElementById(elementId);
 		element.scrollIntoView({ behavior: 'smooth' });

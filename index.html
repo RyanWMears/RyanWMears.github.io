@@ -149,43 +149,11 @@
 </body>
 </html>
 <script>
-	$("#flipbook").turn({
-		width: "80vw",
-		height: "100vh",
-		autoCenter: true,
-		pages: 4,
-		duration: 1000,
-	});
-	function smoothScroll(elementId) {
-		var element = document.getElementById(elementId);
-		element.scrollIntoView({ behavior: 'smooth' });
-	}
-	$('#viewWorkBtn').dxButton({
-		icon: 'arrowdown',
-		stylingMode: 'outlined',
-		text: 'View my work',
-		type: 'success',
-		onClick() {
-			smoothScroll("section_about");
-		},
-	});
-
-	$('#letsBuildBtn').dxButton({
-		stylingMode: 'text',
-		text: "Let's build something amazing together!",
-		type: 'default',
-		onClick() {
-			smoothScroll("section_contact");
-		},
-	});
-
-	$('#contactSubmitBtn').dxButton({
-		stylingMode: 'contained',
-		text: "Submit",
-		type: 'default',
-		onClick() {
-			$('#contactForm').submit();
-		},
-	});
-
+    $("#flipbook").turn({
+        width: "80vw",
+        height: "100vh",
+        autoCenter: true,
+        pages: 4,
+        duration: 1000,
+    });
 </script>

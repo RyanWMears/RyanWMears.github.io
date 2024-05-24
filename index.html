@@ -51,43 +51,46 @@
 		</div>
 		<!-- About Section -->
 		<div id="section_about" class="d-flex flex-column align-items-center bg-light">
-			<h1 class="header text-center">ABOUT</h1>
+			<div class="header text-center">ABOUT</div>
 			<div class="header-underline mt-2"></div>
 
-			<div class="overflow-auto d-flex flex-inline mt-5 ">
-				<div class="col-4 fs-6 align-content-center mx-auto">
+			<div class="overflow-auto d-flex flex-inline mt-5">
+				<div class="col fs-4 ms-5 me-3">	
+					<p class="w-100">
+						Hello there!<br />
+						I'm Ryan.
+					</p>
+					<div class="border mb-5" style="height: 30vh;">
+						Image goes here.
+						<img />
+					</div>
 					<p>
-						Hello there!<br/>
-						I'm Ryan.<br/><br/>
 						I've always been fascinated by technology and its potential to transform the world around us.
 						My journey in software development has been an exciting one, filled with opportunities to learn, grow, and innovate.
 						Throughout my career, I've had the privilege of working on a variety of projects, each presenting its own set of challenges and opportunities for creativity.
 						From developing robust web applications to crafting elegant mobile solutions, I thrive on turning ideas into reality through code.
 					</p>
+				</div>
+				<div class="col fs-4 ms-3 me-5 ">
+					<p style="height: 5vh;">
 
+					</p>
 					<p>
 						What drives me is not just writing lines of code, but solving real-world problems and making a positive impact.
 						I believe in the power of collaboration and continuous learning, constantly seeking out new technologies and best practices to improve my skills and deliver top-notch solutions.
-					</p>
-
-					<p>
+						<br/><br />
 						Outside of coding, you can find me indulging in a good book or spending quality time with friends and family.
 						I'm always up for a new adventure, both in the digital realm and the world beyond.
 						I'm excited about the future of software development and the endless possibilities it holds.
 						If you're looking for a dedicated developer who's passionate about creating exceptional experiences, I'd love to connect and see how we can work together to bring your vision to life.
 					</p>
-
 					<div id="letsBuildBtn"></div>
-				</div>
-				<div class="col-6 mx-auto border">
-					Image goes here.
-					<img />
 				</div>
 			</div>
 		</div>
 		<!-- Projects Section -->
 		<div id="section_projects" class="d-flex flex-column align-items-center bg-light">
-			<h1 class="header">PROJECTS</h1>
+			<div class="header">PROJECTS</div>
 			<div class="header-underline mt-2 mb-5"></div>
 
 			<p>This is the projects section.</p>
@@ -133,10 +136,7 @@
 	</div>-->
 	<!-- Main -->
 	<!--<div id="main" class="d-flex flex-column">-->
-		<!-- Sections -->
-
-
-
+	<!-- Sections -->
 	<!--</div>-->
 	<!-- Footer -->
 	<!--<footer id="footer" class="">
@@ -149,11 +149,25 @@
 </body>
 </html>
 <script>
+    function smoothScroll(elementId) {
+        var element = document.getElementById(elementId);
+        element.scrollIntoView({ behavior: 'smooth' });
+	}
+
     $("#flipbook").turn({
         width: "80vw",
         height: "100vh",
         autoCenter: true,
         pages: 4,
         duration: 1000,
+	});
+
+    $('#letsBuildBtn').dxButton({
+        stylingMode: 'text',
+        text: "Let's build something amazing together!",
+        type: 'default',
+        onClick() {
+            smoothScroll("section_contact");
+        },
     });
 </script>

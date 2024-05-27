@@ -31,7 +31,7 @@ body {
 .header-underline {
     background-color: grey;
     height: 3px;
-    width: 35vw;
+    width: 30vw;
 }
 
 footer {
@@ -75,12 +75,12 @@ footer {
 
 .title-borderline-thick {
     background: #fdfffd;
-    height: 2vh;
+    height: 10px;
     width: 30vw;
 }
 
 .title-borderline {
     background: #fdfffd;
-    height: 1vh;
+    height: 5px;
     width: 30vw;
 }

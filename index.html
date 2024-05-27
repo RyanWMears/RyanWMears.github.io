@@ -29,20 +29,19 @@
 
 </head>
 <body class="bg-dark">
-	<div id="flipbook" class="sample-flipbook">
+	<div id="flipbook" class="sample-flipbook mt-5">
 		<!-- Cover -->
 		<div id="cover" class="d-flex bg-theme-color flex-column align-items-center text-center">
-			<a href="" class="image avatar "><img src="/images/self.jpg" alt="" /></a>
-			<h4 class="" style="color: #e0d566;">READ THIS BOOK FIRST!</h4>
-			<div class="title-borderline mt-2 mb-5"></div>
+			<h4 class="mt-3" style="color: #e0d566;">READ THIS BOOK FIRST!</h4>
+			<div class="title-borderline mt-2 mb-2"></div>
 			<div class="title-font">RYAN MEARS</div>
 			<div class="title-font"> FULL STACK DEVELOPER</div>
-			<div class="title-borderline-thick mt-5 mb-3"></div>
+			<div class="title-borderline mt-4 mb-2"></div>
 			<h4 class="text-white">PLAYERS MANUAL</h4>
 			<div class="title-borderline mt-2 mb-4"></div>
 			<img class=" col-6 border border-5 border-dark " style="height: 45vh" />
 
-			<div class="title-borderline mt-4 mb-2"></div>
+			<div class="title-borderline mt-3 mb-2"></div>
 			<d5 class="text-white">FANTASY ROLE PLAYING GAME</d5>
 			<div class="title-borderline mt-2 mb-2"></div>
 			<d5 class="text-white">The ultimate game of your imagination,<br />complete with monsters, magic, and treasure.<br />For 1 or more beginning to intermediate players.</d5>
@@ -55,7 +54,7 @@
 			<div class="header-underline mt-2"></div>
 
 			<div class="overflow-auto d-flex flex-inline mt-5">
-				<div class="col fs-4 ms-5 me-3">	
+				<div class="col fs-4 ms-5 me-3">
 					<p class="w-100">
 						Hello there!<br />
 						I'm Ryan.
@@ -78,7 +77,7 @@
 					<p>
 						What drives me is not just writing lines of code, but solving real-world problems and making a positive impact.
 						I believe in the power of collaboration and continuous learning, constantly seeking out new technologies and best practices to improve my skills and deliver top-notch solutions.
-						<br/><br />
+						<br /><br />
 						Outside of coding, you can find me indulging in a good book or spending quality time with friends and family.
 						I'm always up for a new adventure, both in the digital realm and the world beyond.
 						I'm excited about the future of software development and the endless possibilities it holds.
@@ -87,6 +86,16 @@
 					<div id="letsBuildBtn"></div>
 				</div>
 			</div>
+		</div>
+		<!-- Table of contents Section -->
+		<div id="section_tableOfContents" class="d-flex flex-column align-items-center bg-light">
+			<div class="header">TABLE OF CONTENTS</div>
+			<div class="header-underline mt-2 mb-5"></div>
+
+			<div>
+
+			</div>
+
 		</div>
 		<!-- Projects Section -->
 		<div id="section_projects" class="d-flex flex-column align-items-center bg-light">
@@ -156,7 +165,7 @@
 
     $("#flipbook").turn({
         width: "80vw",
-        height: "100vh",
+        height: "90vh",
         autoCenter: true,
         pages: 4,
         duration: 1000,

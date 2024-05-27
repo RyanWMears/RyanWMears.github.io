@@ -69,18 +69,18 @@ footer {
 .title-font {
     font-family: 'QuentinCaps';
     color: #fdfffd;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 100;
 }
 
 .title-borderline-thick {
     background: #fdfffd;
-    height: 10px;
+    height: 2vh;
     width: 30vw;
 }
 
 .title-borderline {
     background: #fdfffd;
-    height: 5px;
+    height: 1vh;
     width: 30vw;
 }

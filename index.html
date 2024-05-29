@@ -48,8 +48,38 @@
 
 			<!--<div id="viewWorkBtn" class="col-2 mx-auto auto"></div>-->
 		</div>
+		<!-- Table of contents Section -->
+		<div id="section_tableOfContents" class="d-flex flex-column align-items-center bg-light border-end border-2">
+			<div class="header">TABLE OF CONTENTS</div>
+			<div class="header-underline mt-2 mb-5"></div>
+			<div id="table" class="d-flex flex-inline col-12">
+				<div class="col-2"></div>
+
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<td><a href="#" class="toc-link" data-page="3">About</a></td>
+							<td class="text-center">2</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="toc-link" data-page="4">Project 1</a></td>
+							<td class="text-center">3</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="toc-link" data-page="5">Project 2</a></td>
+							<td class="text-center">4</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="toc-link" data-page="6">Contact</a></td>
+							<td class="text-center">5</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="col-2"></div>
+			</div>
+		</div>
 		<!-- About Section -->
-		<div id="section_about" class="d-flex flex-column align-items-center bg-light border-end border-2 page">
+		<div id="section_about" class="d-flex flex-column align-items-center bg-light border-start border-2 page">
 			<div class="header text-center">ABOUT</div>
 			<div class="header-underline mt-2"></div>
 
@@ -87,27 +117,15 @@
 				</div>
 			</div>
 		</div>
-		<!-- Table of contents Section -->
-		<div id="section_tableOfContents" class="d-flex flex-column align-items-center bg-light border-start border-2">
-			<div class="header">TABLE OF CONTENTS</div>
-			<div class="header-underline mt-2 mb-5"></div>
-
-			<div>
-
-			</div>
-
-		</div>
 		<!-- Projects Section -->
 		<div id="section_projects_1" class="d-flex flex-column align-items-center bg-light border-end border-2">
 			<div class="header">PROJECT 1</div>
 			<div class="header-underline mt-2 mb-5"></div>
-
 			<p>This is a project section.</p>
 		</div>
 		<div id="section_projects_2" class="d-flex flex-column align-items-center bg-light border-end border-2">
 			<div class="header">PROJECT 2</div>
 			<div class="header-underline mt-2 mb-5"></div>
-
 			<p>This is a project section.</p>
 		</div>
 		<!-- Contact Section -->
@@ -175,6 +193,12 @@
         autoCenter: true,
         pages: 6,
         duration: 1000,
+	});
+
+    $(".toc-link").on("click", function (e) {
+        e.preventDefault();
+        var page = $(this).data("page");
+        $("#flipbook").turn("page", page);
 	});
 
     $('#letsBuildBtn').dxButton({

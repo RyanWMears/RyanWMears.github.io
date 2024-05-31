@@ -49,7 +49,7 @@
 			<!--<div id="viewWorkBtn" class="col-2 mx-auto auto"></div>-->
 		</div>
 		<!-- Table of contents Section -->
-		<div id="section_tableOfContents" class="d-flex flex-column align-items-center bg-light border-end border-2 justify-content-center">
+		<div id="section_tableOfContents" class="d-flex flex-column align-items-center bg-light border-end border-2">
 			<div class="header">TABLE OF CONTENTS</div>
 			<div class="header-underline mt-2 mb-5"></div>
 			<div id="table" class="d-flex flex-inline col-12">
@@ -121,7 +121,7 @@
 						I'm excited about the future of software development and the endless possibilities it holds.
 						If you're looking for a dedicated developer who's passionate about creating exceptional experiences, I'd love to connect and see how we can work together to bring your vision to life.
 					</p>
-					<div id="letsBuildBtn"></div>
+					<div id="letsBuildBtn" data-page="8"></div>
 				</div>
 			</div>
 		</div>
@@ -214,6 +214,10 @@
 	});
 
     $(".toc-link").on("click", function (e) {
+        console.log("TTTTTTTT");
+        console.log(e);
+        console.log("this");
+        console.log(this);
         e.preventDefault();
         var page = $(this).data("page");
         $("#flipbook").turn("page", page);
@@ -223,8 +227,10 @@
         stylingMode: 'text',
         text: "Let's build something amazing together!",
         type: 'default',
-        onClick() {
-            smoothScroll("section_contact");
+		onClick(e, a, b) {
+            e.event.preventDefault();
+            var page = $(e.element).data("page");
+            $("#flipbook").turn("page", page);
         },
     });
 </script>
